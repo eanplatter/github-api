@@ -1,1 +1,2 @@
 #GITHUBAPI
+simple get requests

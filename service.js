@@ -2,9 +2,7 @@ var app = angular.module('github-api');
 
 app.service('gitHubService', function($http, env) {
 
-  var id = env.id;
-  var sec = env.secret;
-  var param = "?client_id=" + id + "&client_secret=" + sec;
+  var param = "?client_id=" + env.id + "&client_secret=" + env.sec;
 
   this.getUser = function(username) {
     return $http({
